@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=3 uid="uid://bfq5ywjid75fh"]
+
+[ext_resource type="Texture2D" uid="uid://bjd6uhf1tioos" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_uai1u"]
+[ext_resource type="PackedScene" uid="uid://dyvmu1nqnn7n0" path="res://player/player.tscn" id="2_lbiox"]
+[ext_resource type="Texture2D" uid="uid://dft8brqsus6pq" path="res://addons/Tiny Swords/Factions/Knights/Troops/Dead/Dead.png" id="3_v8ssk"]
+[ext_resource type="Texture2D" uid="uid://dm0ltrwg7lwxb" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="4_p3gm5"]
+[ext_resource type="Texture2D" uid="uid://crdbdk11ture8" path="res://addons/Tiny Swords/Resources/Sheep/HappySheep_All.png" id="5_vyamk"]
+[ext_resource type="PackedScene" uid="uid://balfwcek45snu" path="res://misc/ritual.tscn" id="6_e4cgv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hixdx"]
+line_spacing = 170.0
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(86, 99)
+
+[node name="WarriorPurple" type="Sprite2D" parent="."]
+position = Vector2(992, 289)
+texture = ExtResource("1_uai1u")
+
+[node name="Label10" type="Label" parent="WarriorPurple"]
+offset_left = 586.0
+offset_top = -688.0
+offset_right = 602.0
+offset_bottom = 896.0
+text = "0 1 2 3 4 5 6 7
+"
+label_settings = SubResource("LabelSettings_hixdx")
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="WarriorPurple"]
+offset_left = -623.0
+offset_top = -489.0
+offset_right = -585.0
+offset_bottom = -465.0
+text = "run
+"
+
+[node name="Label3" type="Label" parent="WarriorPurple"]
+offset_left = -669.0
+offset_top = -295.0
+offset_right = -563.0
+offset_bottom = -271.0
+text = "attack_side_1
+"
+
+[node name="Label4" type="Label" parent="WarriorPurple"]
+offset_left = -700.0
+offset_top = -97.0
+offset_right = -594.0
+offset_bottom = -73.0
+text = "attack_side_2
+"
+
+[node name="Label5" type="Label" parent="WarriorPurple"]
+offset_left = -698.0
+offset_top = 80.0
+offset_right = -583.0
+offset_bottom = 104.0
+text = "attack_down_1
+"
+
+[node name="Label6" type="Label" parent="WarriorPurple"]
+offset_left = -721.0
+offset_top = 280.0
+offset_right = -606.0
+offset_bottom = 304.0
+text = "attack_down_2
+"
+
+[node name="Label7" type="Label" parent="WarriorPurple"]
+offset_left = -733.0
+offset_top = 474.0
+offset_right = -618.0
+offset_bottom = 498.0
+text = "attack_up_1
+"
+
+[node name="Label8" type="Label" parent="WarriorPurple"]
+offset_left = -707.0
+offset_top = 662.0
+offset_right = -592.0
+offset_bottom = 686.0
+text = "attack_up_2
+"
+
+[node name="Label9" type="Label" parent="WarriorPurple"]
+offset_left = -502.0
+offset_top = -775.0
+offset_right = 480.0
+offset_bottom = -751.0
+text = "0                                               1                                             2                                           3                                            4                                            5
+"
+
+[node name="Label" type="Label" parent="WarriorPurple"]
+offset_left = -627.0
+offset_top = -683.0
+offset_right = -589.0
+offset_bottom = -659.0
+text = "idle
+"
+
+[node name="Player" parent="." instance=ExtResource("2_lbiox")]
+
+[node name="Dead" type="Sprite2D" parent="."]
+position = Vector2(2230, 116)
+texture = ExtResource("3_v8ssk")
+
+[node name="TorchRed" type="Sprite2D" parent="."]
+position = Vector2(2431, 327)
+texture = ExtResource("4_p3gm5")
+
+[node name="HappySheepAll" type="Sprite2D" parent="."]
+position = Vector2(2447, -296)
+texture = ExtResource("5_vyamk")
+
+[node name="Ritual" parent="." instance=ExtResource("6_e4cgv")]

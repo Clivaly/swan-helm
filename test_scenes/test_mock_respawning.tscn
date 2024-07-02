@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj6snb47ih7t1"]
+
+[ext_resource type="PackedScene" uid="uid://dyvmu1nqnn7n0" path="res://player/player.tscn" id="1_l412l"]
+[ext_resource type="PackedScene" uid="uid://trjji58ul7c3" path="res://systems/mob_spawner.tscn" id="2_xo8hj"]
+[ext_resource type="PackedScene" uid="uid://di6rgxtp6r8mm" path="res://misc/meat.tscn" id="3_rk4o1"]
+
+[node name="TestMockRespawning" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_l412l")]
+position = Vector2(536, 217)
+
+[node name="MobSpawner" parent="." instance=ExtResource("2_xo8hj")]
+
+[node name="Meat" parent="." instance=ExtResource("3_rk4o1")]
+position = Vector2(226, 478)
+regeneration_amount = 20
+
+[node name="Meat2" parent="." instance=ExtResource("3_rk4o1")]
+position = Vector2(1021, 581)
+regeneration_amount = 20
+
+[node name="Meat3" parent="." instance=ExtResource("3_rk4o1")]
+position = Vector2(926, -63)
+regeneration_amount = 20

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6xlnnu7ml0p0"]
+
+[ext_resource type="PackedScene" uid="uid://dyvmu1nqnn7n0" path="res://player/player.tscn" id="3_r5nyu"]
+[ext_resource type="PackedScene" uid="uid://qun5yj54ddg2" path="res://enemies/goblin.tscn" id="4_1usua"]
+[ext_resource type="PackedScene" uid="uid://di6rgxtp6r8mm" path="res://misc/meat.tscn" id="5_k5wke"]
+[ext_resource type="PackedScene" uid="uid://c4ndai11nysrj" path="res://enemies/pawn.tscn" id="5_uw7tg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("3_r5nyu")]
+position = Vector2(276, 209)
+health = 40
+
+[node name="Pawn5" parent="." instance=ExtResource("5_uw7tg")]
+position = Vector2(969, 560)
+
+[node name="Globin" parent="." instance=ExtResource("4_1usua")]
+position = Vector2(982, 899)
+
+[node name="Meat" parent="." instance=ExtResource("5_k5wke")]
+position = Vector2(433, 606)
+regeneration_amount = 20
+
+[node name="Meat2" parent="." instance=ExtResource("5_k5wke")]
+position = Vector2(95, 105)
+regeneration_amount = 20
+
+[node name="Meat3" parent="." instance=ExtResource("5_k5wke")]
+position = Vector2(889, 435)
+regeneration_amount = 20
